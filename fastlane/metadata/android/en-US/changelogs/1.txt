@@ -1,0 +1,6 @@
+Initial release.
+* Live gyro/accelerometer streaming
+* Kuramoto order parameter, live
+* Phase coherence, live
+* CPU time comparison
+* CSV export

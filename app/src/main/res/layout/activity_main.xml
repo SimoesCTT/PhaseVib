@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PHASEVIB"
+            android:textSize="22sp"
+            android:textColor="@color/accent"
+            android:letterSpacing="0.2"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gyro phase co-processor"
+            android:textSize="12sp"
+            android:textColor="@color/text_dim"
+            android:layout_marginBottom="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <Button
+                android:id="@+id/btnStart"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Start"
+                android:layout_marginEnd="4dp" />
+
+            <Button
+                android:id="@+id/btnStop"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Stop"
+                android:enabled="false"
+                android:layout_marginStart="4dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnExport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Export CSV"
+            android:enabled="false"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SENSOR"
+            android:textSize="11sp"
+            android:textColor="@color/text_dim"
+            android:letterSpacing="0.15"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/txtSensor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="—"
+            android:textSize="12sp"
+            android:textColor="@color/text"
+            android:fontFamily="monospace"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="STANDARD CPU PIPELINE"
+            android:textSize="11sp"
+            android:textColor="@color/text_dim"
+            android:letterSpacing="0.15"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/txtCpuTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="—"
+            android:textSize="12sp"
+            android:textColor="@color/text"
+            android:fontFamily="monospace"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/txtCpuResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="—"
+            android:textSize="12sp"
+            android:textColor="@color/text"
+            android:fontFamily="monospace"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PHASE PIPELINE"
+            android:textSize="11sp"
+            android:textColor="@color/text_dim"
+            android:letterSpacing="0.15"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/txtPhaseTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="—"
+            android:textSize="12sp"
+            android:textColor="@color/text"
+            android:fontFamily="monospace"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/txtPhaseResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="—"
+            android:textSize="12sp"
+            android:textColor="@color/text"
+            android:fontFamily="monospace"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KURAMOTO ORDER PARAMETER"
+            android:textSize="11sp"
+            android:textColor="@color/text_dim"
+            android:letterSpacing="0.15"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/txtOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="—"
+            android:textSize="36sp"
+            android:textColor="@color/accent"
+            android:fontFamily="monospace"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/txtOrderLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/text_dim"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ACCELEROMETER PREVIEW"
+            android:textSize="11sp"
+            android:textColor="@color/text_dim"
+            android:letterSpacing="0.15"
+            android:layout_marginBottom="4dp" />
+
+        <com.simoesctt.phasevib.LivePlotView
+            android:id="@+id/plotView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Research and educational tool. Sensors only — no network, no permissions."
+            android:textSize="10sp"
+            android:textColor="@color/text_dim"
+            android:layout_marginBottom="24dp" />
+
+    </LinearLayout>
+</ScrollView>

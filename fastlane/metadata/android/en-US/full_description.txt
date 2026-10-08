@@ -1,0 +1,19 @@
+A phase-domain co-processor for the phone's motion sensors.
+
+PhaseVib reads the gyroscope and accelerometer at maximum rate and runs a
+phase-domain analysis pipeline in parallel with the sensor stream. It
+displays the Kuramoto order parameter r and mean pairwise phase coherence,
+updated continuously while the sensors stream.
+
+Features:
+* Reads gyroscope and accelerometer at 200 Hz
+* Rolling 512-sample buffer, phase pipeline every 128 samples
+* Live Kuramoto order parameter r
+* Live mean pairwise phase coherence
+* CPU time comparison: FFT pipeline vs phase pipeline
+* Raw data export as CSV
+* No INTERNET permission
+
+Research and educational tool. Uses the Android sensor API only.
+
+License: GPL-3.0-or-later
